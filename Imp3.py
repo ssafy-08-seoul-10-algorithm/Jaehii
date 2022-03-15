@@ -5,15 +5,16 @@ cnt = 0
 
 x = input()
 col = int(x[1])-1
-row = str(x[0])
-row_arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+row = int(ord(x[0])) - int(ord('a')) + 1
+# row_arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 
-for i in range(len(row_arr)):
+''' for i in range(len(row_arr)):
     if row == row_arr[i]:
         row = i
         break
     else:
         continue
+'''
 
 print(row, col)
 for dxy in dxys:
